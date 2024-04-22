@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient android:type="linear" android:angle="100"
+        android:startColor="#FFFFFF" android:endColor="#000000"/>
+
+<!--    here ano lang siya, dito mo babaguhin if gusto mo paltan yung color nung bg
+        para sa log in page hehehe. so parang in case na gusto ko paltan yung color
+        yung type, or angle. here ako pupunta or mag eedit. -->
+</shape>

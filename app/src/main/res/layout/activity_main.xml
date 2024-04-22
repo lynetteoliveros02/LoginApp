@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+<!--        dito po yung nasa taas, siya yung naging guide para po sa pagkaka layout nitong mismong
+            log-in page nung application ko. meaning, kapag po wala ito magiging magulo siya.-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL OF DUTY"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"/>
+
+<!--        sa unang textview na ito, makikita mo to sa pinaka taas whici is yung "call of duty"
+            ginamitan ko siya ng font family para maiba yung text niya.-->
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/icon_account_circle"
+            />
+
+<!--        ito naman, para dun sa icon na parang default profile picture. para magkaroon siya non
+            at ma identify mo na isa siyang log in page for a game.-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Username"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner_"
+            android:padding="18dp"
+            android:inputType="text"
+            android:id="@+id/username_input"/>
+
+<!--        dito naman is para sa edit ng username natin at sa pag input ng user para sa kanilang
+            username. ginamitan ko rin ito ng drawable na rounded corner para sa makikita mo na
+            parang color white na naka paikot sa username. rectangle siya actually pero naka ano
+            rounded corner hehehe-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20sp"
+            android:background="@drawable/rounded_corner_"
+            android:padding="18dp"
+            android:inputType="textPassword"
+            android:id="@+id/password_input"/>
+
+<!--        same lang siya dun sa username, pinag kaiba lang para naman so sa password. pero kung
+            makikita mo naman sa input type, sa username ang ginamit ko lang is "text" tapos dito
+            naman sa password ang ginamit ko is "textPassword". -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:backgroundTint="@color/white"
+            android:textColor="#3B84F1"
+            android:padding="18dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:id="@+id/login_btn"/>
+
+<!--        here, para sa button na log in. ma checheck naman to if gumagana sa main activity na
+            file. makikita don yung credentials something. -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Login"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"/>
+
+<!--        here naman same lang siya dun sa taas na "call of duty" ang pinag kaiba lang talaga
+            hindi ko na binago yung text style niya. -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:id="@+id/facebook_btn"
+                android:src="@drawable/facebook"/>
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:id="@+id/google_btn"
+                android:src="@drawable/google"/>
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:id="@+id/garena_btn"
+                android:src="@drawable/garena"/>
+
+
+        </LinearLayout>
+
+<!--        dito naman sa linear layout na to na nasa loob ng isa pang linear layout is para
+            dun sa mga image natin. which is yung facebook, google, and garena. dito ni layout
+            natin tong tatlo para naman maayos sila tingnan and gumamit namana ko dito ng image
+            ng mga logo at kinuha ko sila sa google at nilagay ko sa drawable.-->
+
+    </LinearLayout>
+</RelativeLayout>
